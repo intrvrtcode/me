@@ -34,9 +34,7 @@ const Aboutme = () => {
             </div>
           </div>
 
-          <div className="col-span-1"></div>
-
-          <div className="col-span-12 sm:col-span-5">
+          <div className="col-span-12 order-1 sm:order-2 sm:col-span-5">
             <div className="relative flex justify-end">
               <Dots className="absolute rotate-90 right-[250px] top-[59px]" />
               <Dots className="absolute bottom-[172px] right-[20px]" />

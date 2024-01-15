@@ -1,9 +1,23 @@
-import TextField from "../components/fields/TextField";
 import discord from "../assets/img/svg/discord.svg";
 import envelope from "../assets/img/svg/envelope.svg";
 import twitter from "../assets/img/svg/twitter.svg";
+import TextField from "../components/fields/TextField";
+import EmailField from "../components/fields/EmailField";
+import TextareaField from "../components/fields/TextareaField";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Contacts = () => {
+
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.children[0].children[0].children[0].value;
+    const email = form.children[0].children[1].children[0].value;
+    const title =  form.children[1].children[0].value;
+    const message = form.children[2].children[0].value;
+    console.log(name, email, title, message)
+  }
+
   return (
     <>
       <section className="mt-20 mb-12">
@@ -14,11 +28,25 @@ const Contacts = () => {
       <section className="mb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <p className="text-gray font-medium leading-7">
+            <p className="text-gray font-medium leading-7 mb-8">
               I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
             </p>
 
-            <TextField label="Name" name="name" />
+            <form action="send" method="POST" onSubmit={handleSendMessage} className="flex flex-col gap-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <TextField label="Name" name="name" />
+
+                <EmailField label="Email" name="email" />
+              </div>
+
+              <TextField label="Title" name="title" />
+
+              <TextareaField label="Message" name="message" />
+
+              <div>
+                <PrimaryButton title="Send" />
+              </div>
+            </form>
           </div>
 
           <div className="flex flex-wrap justify-end gap-4">
@@ -27,7 +55,7 @@ const Contacts = () => {
               <p className="text-gray">4149500120690030</p>
             </div>
 
-            <div className="p-4 border border-white">
+            <div className="p-4 border border-white h-min">
               <p className="font-semibold text-white mb-4">Message me here</p>
 
               <div className="flex flex-nowrap gap-x-1 mb-2 items-center">

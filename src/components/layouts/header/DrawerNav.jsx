@@ -17,7 +17,7 @@ const DrawerNav = () => {
         <div className="w-5 h-0 border-b-2 border-[#D9D9D9]  group-hover:border-white transition-colors"></div>
       </div>
 
-      <div className={`fixed border-l border-primary top-0 right-0 z-20 w-64 h-full transition-all duration-500 transform translate-x-full bg-background opacity-95 shadow-lg ${show ? 'translate-x-0' : ''} sm:hidden`}>
+      <div className={`fixed border-l border-primary top-0 right-0 z-20 w-64 h-full transition-all duration-500 transform bg-background opacity-95 shadow-lg ${show ? 'translate-x-0' : 'translate-x-full'} sm:hidden`}>
         <div className="px-4 py-6">
           <div className="flex justify-between mb-10">
             <span className="text-gray text-lg font-semibold">&lt;/&gt;</span>

@@ -25,7 +25,7 @@ const Home = () => {
 
             <h2 className="text-base text-gray mb-6">He crafts responsive websites where technologies meet creativity</h2>
 
-            <PrimaryButton title="Contact me!!" />
+            <PrimaryButton onClick={() => navigate('/contacts')} title="Contact me!!" />
           </div>
         </div>
 
