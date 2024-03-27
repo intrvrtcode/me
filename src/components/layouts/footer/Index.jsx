@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex gap-x-6 mb-4">
               <h3 className="text-base text-white font-bold"><span className="text-gray font-semibold">&lt;/&gt;</span> Aldi</h3>
-              <span className="text-gray">elias@elias-dev.ml</span>
+              <span className="text-gray">design by elias@elias-dev.ml</span>
             </div>
 
             <p className="text-white">Web designer and front-end developer</p>
@@ -22,9 +22,13 @@ const Footer = () => {
               <h4 className="text-2xl font-medium text-white mb-3">Media</h4>
 
               <div className="flex gap-2">
-                <img className="cursor-pointer" src={github} />
+                <a href="https://github.com/intrvrtcode" target="_blank" rel="noreferrer">
+                  <img className="cursor-pointer" src={github} />
+                </a>
                 <img className="cursor-pointer" src={figma} />
-                <img className="cursor-pointer" src={discord} />
+                <a href="https://discord.com/users/902860650353664000" target="_blank" rel="noreferrer">
+                  <img className="cursor-pointer" src={discord} />
+                </a>
               </div>
             </div>
           </div>

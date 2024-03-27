@@ -53,10 +53,10 @@ const Home = () => {
               <img src={quotationMark} alt="quotation-mark" />
             </div>
 
-            <span className="p-6 sm:p-8 inline-block border border-gray text-white text-xl sm:text-2xl font-medium">With great power comes great electricity bill</span>
+            <span className="p-6 sm:p-8 inline-block border border-gray text-white text-xl sm:text-2xl font-medium">First of all, solve the problem. Then, write the code</span>
           </div>
           <div className="flex justify-end">
-            <span className="p-4 inline-block border-l border-r border-b border-gray text-white text-xl sm:text-2xl">- Dr. Who</span>
+            <span className="p-4 inline-block border-l border-r border-b border-gray text-white text-xl sm:text-2xl">- John Johnson</span>
           </div>
         </div>
       </section>
@@ -206,7 +206,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <p className="text-white font-medium">
               I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
@@ -214,17 +214,17 @@ const Home = () => {
           </div>
 
           <div className="flex mt-6 sm:mt-0 justify-end">
-            <div className="p-4 border border-white w-52">
+            <div className="p-4 border border-white">
               <h4 className="font-semibold text-white mb-4">Message me here</h4>
 
               <div className="flex flex-nowrap gap-x-1 mb-2 items-center">
                 <img src={discord} />
-                <p className="text-gray">!Elias#3519</p>
+                <p className="text-gray">intrvrtcode</p>
               </div>
 
               <div className="flex flex-nowrap gap-x-1 items-center">
                 <img src={envelope} />
-                <p className="text-gray">elias@elias.me</p>
+                <p className="text-gray break-all">aldirmd.freelace@gmail.com</p>
               </div>
             </div>
           </div>

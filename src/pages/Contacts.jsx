@@ -1,6 +1,7 @@
 import discord from "../assets/img/svg/discord.svg";
 import envelope from "../assets/img/svg/envelope.svg";
-import twitter from "../assets/img/svg/twitter.svg";
+import linkedin from "../assets/img/svg/linkedin.svg";
+import telegram from "../assets/img/svg/telegram.svg";
 import TextField from "../components/fields/TextField";
 import EmailField from "../components/fields/EmailField";
 import TextareaField from "../components/fields/TextareaField";
@@ -60,12 +61,12 @@ const Contacts = () => {
 
               <div className="flex flex-nowrap gap-x-1 mb-2 items-center">
                 <img src={discord} />
-                <p className="text-gray">!Elias#3519</p>
+                <p className="text-gray">intrvrtcode</p>
               </div>
 
               <div className="flex flex-nowrap gap-x-1 items-center">
                 <img src={envelope} />
-                <p className="text-gray">elias@elias.me</p>
+                <p className="text-gray break-all">aldirmd.freelance@gmail.com</p>
               </div>
             </div>
           </div>
@@ -76,9 +77,14 @@ const Contacts = () => {
         <h3 className="text-white text-3xl font-medium mb-5"><span className="text-primary">#</span>all-media</h3>
 
         <div className="flex gap-4">
-          <div className="flex flex-nowrap gap-x-1 mb-2 items-center">
-            <img src={twitter} />
-            <p className="text-gray">@elias</p>
+          <div className="flex flex-nowrap gap-x-2 mb-2 items-center">
+            <img src={linkedin} />
+            <p className="text-gray">@aldirahmaddani</p>
+          </div>
+
+          <div className="flex flex-nowrap gap-x-2 mb-2 items-center">
+            <img src={telegram} />
+            <p className="text-gray">@intrvrtcode</p>
           </div>
         </div>
       </section>
